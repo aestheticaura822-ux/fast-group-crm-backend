@@ -7,8 +7,9 @@
     "node": "24.x"
   },
  "scripts": {
-  "build": "echo 'Build already done'",
-  "start": "node dist/server.js"
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "dev": "nodemon src/server.ts"
 },
   "dependencies": {
     "@sendgrid/mail": "^8.1.6",

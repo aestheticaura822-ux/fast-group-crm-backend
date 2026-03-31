@@ -1,7 +1,7 @@
 import winston from 'winston';
 
-// Simple console logger only (no file transport for Vercel)
-const logger = winston.createLogger({
+// Named export for logger
+export const logger = winston.createLogger({
   level: 'info',
   format: winston.format.combine(
     winston.format.timestamp(),
