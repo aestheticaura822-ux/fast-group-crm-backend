@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Fast Group</title>
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #0A2472 0%, #1E3D8F 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .content {
+            background: #ffffff;
+            padding: 40px 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            background: #F4C542;
+            color: #0A2472;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        .social-links {
+            margin: 20px 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #0A2472;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Fast Group!</h1>
+        </div>
+        <div class="content">
+            <h2>Hi {{name}},</h2>
+            <p>Welcome to Fast Group CRM! We're thrilled to have you on board.</p>
+            <p>With our platform, you can:</p>
+            <ul>
+                <li>Manage leads efficiently</li>
+                <li>Track your sales pipeline</li>
+                <li>Generate insightful reports</li>
+                <li>Collaborate with your team</li>
+            </ul>
+            <p>Ready to get started?</p>
+            <div style="text-align: center;">
+                <a href="{{appUrl}}/login" class="button">Log In to Your Account</a>
+            </div>
+            <p>If you have any questions, our support team is here to help!</p>
+            <p>Best regards,<br>The Fast Group Team</p>
+        </div>
+        <div class="footer">
+            <div class="social-links">
+                <a href="https://facebook.com/fastgroup">Facebook</a> |
+                <a href="https://linkedin.com/company/fastgroup">LinkedIn</a> |
+                <a href="https://twitter.com/fastgroup">Twitter</a>
+            </div>
+            <p>&copy; 2024 Fast Group of Companies. All rights reserved.</p>
+            <p>You're receiving this email because you signed up for Fast Group CRM.</p>
+        </div>
+    </div>
+</body>
+</html>
